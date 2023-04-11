@@ -26,11 +26,13 @@ const answers = [
 //   return random;
 // }
 const click = document.querySelector(".container");
-let answer = document.querySelector("p");
+let answer = document.querySelector("#text");
+const eight = document.querySelector("#eight");
 
 click.addEventListener("click", function () {
   click.classList.add("shakeBall");
   answer.classList.add("textZoom");
+  eight.style.display = "none";
 
   //removes class at end of animation. Ensures animation runs on every click.
   answer.addEventListener("animationend", function () {
